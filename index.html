@@ -1,3 +1,90 @@
-<h1>Vulcan SIEM</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VulcanSIEM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
-building worlds fastest siem
+<h1>VulcanSIEM</h1>
+
+<p><strong>The fastest SIEM ever built.</strong></p>
+
+<p>
+VulcanSIEM is a security analytics engine built for speed, not excuses.
+It is designed from the ground up to ingest, normalize, and query logs
+orders of magnitude faster than existing SIEM platforms. We use technologies that are normally used in Formula 1 and High-Frequency Trading as part of our core infrastructure components.
+</p>
+
+<h2>Performance Claims</h2>
+
+<p>
+Measured on single‑node environments:
+</p>
+
+<ul>
+  <li><strong>420× faster than Splunk</strong></li>
+  <li><strong>210× faster than Elastic SIEM</strong></li>
+  <li><strong>100× faster than Azure Log Analytics (Sentinel)</strong></li>
+  <li><strong>70× faster than Google Chronicle</strong></li>
+</ul>
+
+<p>
+These systems were not built for modern security workloads.
+VulcanSIEM was.
+</p>
+
+<h2>Why It’s Faster</h2>
+
+<ul>
+  <li>No mandatory agents</li>
+  <li>No late parsing</li>
+  <li>No schema-on-read</li>
+  <li>No JSON walking at query time</li>
+  <li>No distributed overhead on a single node</li>
+</ul>
+
+<p>
+Logs are normalized once, immediately, into a tightly packed,
+columnar internal schema optimized for security analytics.
+Queries scan columns, not documents.
+</p>
+
+<h2>Ingestion</h2>
+
+<ul>
+  <li>Syslog (RFC5424, RFC3164)</li>
+  <li>CEF, LEEF, OCSF</li>
+  <li>JSON / ndJSON</li>
+  <li>TCP syslog and HTTPS ingest</li>
+</ul>
+
+<p>
+Use existing forwarders. Use operating system defaults.
+Agents are optional. Usually unnecessary.
+</p>
+
+<h2>Status</h2>
+
+<p>
+Early development.
+Benchmarks are being made reproducible and will be published.
+Detection packs and documentation are in progress.
+</p>
+
+<p>
+This project is built by <a href="timosarkar.xyz">@timosarkar</a> who was tired of waiting
+minutes for answers that should take microseconds.
+</p>
+
+<hr>
+
+<p>
+* Comparisons are based on single‑node test environments and focus on raw
+ingestion and query performance. Managed cloud services introduce
+unavoidable overhead unrelated to core engine design.
+</p>
+
+</body>
+</html>
